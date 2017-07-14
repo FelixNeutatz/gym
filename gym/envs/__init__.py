@@ -51,6 +51,20 @@ register(
 # ----------------------------------------
 
 register(
+    id='ColumnSelection-v0',
+    entry_point='gym.envs.classic_control:ColumnSelectionEnv',
+    max_episode_steps=10000,
+    reward_threshold=1.0,
+)
+
+register(
+    id='ColumnSelection-v1',
+    entry_point='gym.envs.classic_control:ColumnSelectionEnv2',
+    max_episode_steps=10000,
+    reward_threshold=1.0,
+)
+
+register(
     id='CartPole-v0',
     entry_point='gym.envs.classic_control:CartPoleEnv',
     max_episode_steps=200,
